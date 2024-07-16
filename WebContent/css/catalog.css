@@ -1,0 +1,463 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.catalog-container{
+	max-width: 1500px;
+	position: relative;
+  	margin: auto;
+}
+
+.catalog-filter{
+	display: grid;
+	grid-gap: 10px;
+	padding: 10px;
+	font-size: 0.8em;
+}
+
+#select-order{
+	grid-row: 1;
+	grid-column: 1;
+	text-align: center;
+}
+
+#search-date{
+	grid-row: 1;
+	grid-column: 2;
+	text-align: center;
+}
+
+#select-order button, #search-date button {
+  background-color: #0D47A1;
+  color: white;
+  padding: 8px 20px;
+  margin: 8px 0;
+  margin-top: 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: 0.8em;
+}
+
+#select-order button:hover, #search-date button:hover {
+  opacity:1;
+}
+
+#cOrder, #tDate{
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.travel-title a:link, .travel-title a:visited, .travel-resptitle a:link, .travel-resptitle a:visited{
+	font-weight: bold;
+	text-decoration: none;
+	color: #0D47A1;
+}
+
+.travel-title a:hover, .travel-title a:active, .travel-resptitle a:hover, .travel-resptitle a:active{
+	color: #90E0EF;
+}
+
+.catalog-container a.cart-link:link, .catalog-container a.cart-link:visited{
+  background-color: #0D47A1;
+  color: white;
+  padding: 1em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.catalog-container a.cart-link:hover, .catalog-container a.cart-link:active{
+  	background-color: #90E0EF;
+	color: #0D47A1;
+}
+
+.catalog-container {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.travel-container{
+	border: 1px solid #0D47A1;
+	margin-bottom: 1%;
+	border-radius: 15px;
+	display: grid;
+  	grid-gap: 10px;
+  	background-color: white;
+  	padding: 10px;
+}
+
+.travel-img img{
+	width: 150px;
+	height: auto;
+	border-radius: 15px;
+}
+
+.travel-img { 
+	grid-row: 1;
+	grid-column: 1; 
+	}
+	
+.travel-img img.hover-shadow {
+  transition: 0.3s;
+}
+
+.travel-img .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+	
+.travel-detail { 
+	grid-row: 1;
+	grid-column: 2 / span 2;
+}
+
+.travel-detail{
+	display: grid;
+  	grid-gap: 10px;
+  	padding: 10px;
+}
+
+.travel-title{
+	grid-row: 1;
+	grid-column: 1 / span 2;
+}
+
+.travel-description{
+	grid-row: 2;
+	grid-column: 1 / span 2;
+}
+
+.travel-disp{
+	grid-row: 3;
+	grid-column: 1;
+}
+
+.travel-price{
+	grid-row: 3;
+	grid-column: 2;
+}
+
+.travel-infoCart{
+	display: grid;
+  	grid-gap: 10px;
+  	padding: 10px;
+}
+
+.travel-dispCart{
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.travel-priceCart{
+	grid-row: 2;
+	grid-column: 1;
+}
+
+.travel-toCart { 
+	grid-row: 1;
+	grid-column: 4;
+	margin-top: 30%;
+	}
+	
+.travel-quantity input[type=number], .travel-respquantity input[type=number]{
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.travel-quantity input[type=number]{
+	grid-row: 3;
+	grid-column: 2;
+}
+.travel-quantity input[type=number]:focus, .travel-respquantity input[type=number]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.cart-button { 
+	grid-row: 1;
+	grid-column: 4;
+	display: grid;
+  	grid-gap: 10px;
+  	padding: 10px;
+}
+
+.cart-button .checkoutbtn{
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.cart-button .deletebtn{
+	grid-row: 2;
+	grid-column: 1;
+}
+
+.checkoutbtn, .deletebtn {
+  background-color: #0D47A1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 1em;
+}
+
+.checkoutbtn:hover, .deletebtn:hover {
+  opacity:1;
+}
+
+.deletebtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.clearfix button {
+  background-color: #0D47A1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.clearfix button:hover {
+  opacity:1;
+}
+
+.clearfix .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.clearfix .cancelbtn, .clearfix .signupbtn {
+  float: left;
+  width: 50%;
+}
+	
+@media screen and (min-width: 1200px){
+.travel-resptitle{
+	display: none;
+}
+
+.travel-respdescription{
+	display: none;
+}
+
+.travel-info{
+	display: none;
+}
+
+.travel-resptoCart{
+	display: none;
+}
+
+.travel-respinfoCart{
+	display: none;
+}
+
+.travel-respquantity{
+	display: none;
+}
+
+.respcart-button, .respcart-button button{
+	display: none;
+}
+
+} 
+
+@media screen and (max-width: 1199px) {
+
+.catalog-container{
+	width: 100%;
+}
+
+.travel-container{
+	padding: 0;
+}
+
+.travel-detail { 
+	display:none; 
+}
+
+.travel-resptitle{
+	grid-row: 1;
+	grid-column: 1;
+	text-align: center;
+	margin: 0;
+	background-color: #0D47A1;
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+	color: white;
+}
+
+.travel-resptitle a:link, .travel-resptitle a:visited{
+	color: inherit;
+}
+
+.travel-resptitle:hover{
+	color: #0D47A1;
+	background-color: #90E0EF;
+}
+
+.travel-img { 
+	grid-row: 2;
+	grid-column: 1;
+	padding: 10px; 
+}
+
+.travel-respdescription{
+	grid-row: 3;
+	grid-column: 1;
+	padding: 10px;
+}
+
+.travel-info { 
+	grid-row: 4 / span 2;
+	grid-column: 1;
+	padding: 10px;
+	display: grid;
+  	grid-gap: 10px;
+  	padding: 10px;
+}
+
+.travel-respinfoCart { 
+	grid-row: 4;
+	grid-column: 1;
+	padding: 10px;
+	display: grid;
+  	grid-gap: 10px;
+  	padding: 10px;
+}
+
+.travel-respdisp{
+	grid-row: 1;
+	grid-column: 1;
+	text-align: left;
+}
+
+.travel-respprice{
+	grid-row: 1;
+	grid-column: 2;
+	text-align: right;
+}
+
+.travel-resppriceCart{
+	grid-row: 1;
+	grid-column: 2;
+	text-align: right;
+}
+
+.travel-respquantity{
+	grid-row: 5;
+	grid-column: 1;
+	text-align: left;
+	padding: 10px;
+}
+
+.travel-respquantity input[type=number]{
+	width: 100%;
+}
+
+.travel-respdDate{
+	grid-row: 2;
+	grid-column: 1;
+	text-align: left;
+}
+
+.travel-resprDate{
+	grid-row: 2;
+	grid-column: 2;
+	text-align: right;
+}
+
+.travel-toCart{
+	display:none;
+}
+
+.travel-resptoCart { 
+	grid-row: 6;
+	grid-column: 1;
+	margin: 0;
+	width: 100%;
+	background-color: #0D47A1;
+	color: white;
+	border-radius: 0 0 15px 15px;
+	text-align: center;
+}
+
+.travel-resptoCart a:link, .travel-resptoCart a:visited{
+	color: inherit;
+	text-decoration: none;
+}
+
+.travel-resptoCart:hover{
+	color: #0D47A1;
+	background-color: #90E0EF;
+}
+
+.travel-img, .travel-toCart{
+	text-align: center;
+}
+
+.travel-img img{
+	width: 30%;
+}
+
+.cart-button{
+	display:none;
+}
+
+.respcart-button{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+}
+
+@media screen and (max-width: 800px){
+	
+.travel-img img{
+	width: 100%;
+}
+
+#select-order{
+	grid-row: 1;
+	grid-column: 1;
+	text-align: left;
+}
+
+#search-date{
+	grid-row: 2;
+	grid-column: 1;
+	text-align: left;
+}
+}
+
+@media screen and (min-width: 401px){
+.travel-respdisp{
+	float: left;
+}
+
+.travel-respprice{
+	float: right;
+}
+}
+
+@media screen and (max-width: 350px){
+.travel-respprice #resp-price{
+	display: block;	
+}
+}

@@ -1,0 +1,300 @@
+@charset "ISO-8859-1";
+
+body#bodySignUp {
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+* {box-sizing: border-box}
+
+div.travel-description, div.destination-description, div.travel-table, 
+h1.destInfo, hr, div.mod-link, div.user-detail, div.user-info, p.user-link, p.admin-link, h2#traveler-detail, div.order-filter{
+	max-width: 1200px;
+	position: relative;
+  	margin: auto;
+}
+
+.order-filter{
+	display: grid;
+	grid-gap: 10px;
+	padding: 10px;
+	font-size: 1em;
+}
+
+#search-username{
+	grid-row: 1;
+	grid-column: 2;
+}
+
+#search-date{
+	grid-row: 1;
+	grid-column: 1;
+}
+
+#in-toDate{
+	display: inline;
+}
+
+#search-username button, #search-date button {
+  background-color: #0D47A1;
+  color: white;
+  padding: 8px 20px;
+  margin: 8px 0;
+  margin-top: 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: 1em;
+}
+
+#search-username button:hover, #search-date button:hover {
+  opacity:1;
+}
+
+#fromDate, #toDate, #inUsername{
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+hr {
+  border: 1px solid lightblue;
+}
+
+h1.destInfo{
+	padding: 10px;
+}
+
+div.slideshow-container h1{
+	border-radius: 15px;
+	background-color: #0D47A1;
+	padding: 10px;
+	color: white;
+}
+
+div.travel-description, div.destination-description, div.user-detail{
+	 border: 1px solid #0D47A1;
+	 border-radius: 15px;
+	 margin-top: 2%;
+	 margin-bottom: 2%;
+}
+
+div.travel-description h1, div.destination-description h2,
+div.travel-description h2, div.destination-description h3, div.user-detail h1{
+	background-color: #0D47A1;
+	color: white;
+	margin: 0;
+	padding: 10px;
+}
+
+div.travel-description p, div.destination-description p, .user-info
+{
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+div.travel-description h1, div.destination-description h2, div.travel-description h2, div.user-detail h1{
+	border-radius: 15px 15px 0px 0px;
+}
+
+div.travel-description h1 , div.destination-description h2, div.travel-description h2, 
+div.destination-description h3, div.travel-description p , div.destination-description p{
+	text-align : left;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #0D47A1;
+  padding: 8px;
+  font-size: 1em;
+}
+
+#customers tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0D47A1;
+  color: white;
+  font-size: 1em;
+}
+
+div.mod-link{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+div.mod-link hr{
+	margin-bottom: 2%;
+}
+
+.travel-table a:link, .travel-table a:visited, .mod-link a:link, .mod-link a:visited, 
+p.user-link a:link, p.admin-link a:link, p.user-link a:visited, p.admin-link a:visited, a#checkout-link:link, a#checkout-link:visited{
+  background-color: #0D47A1;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.travel-table a:hover, .travel-table a:active, .mod-link a:hover, .mod-link a:active,
+p.user-link a:hover, p.admin-link a:hover, p.user-link a:active, p.admin-link a:active, a#checkout-link:hover, a#checkout-link:active {
+  	background-color: #90E0EF;
+	color: #0D47A1;
+}
+
+.scroll-table{
+	overflow-x:auto;
+}
+.mod-link a#delete-link:link, .mod-link a#delete-link:visited{
+	background-color: red;
+	color: black;
+}
+
+.mod-link a#delete-link:hover, .mod-link a#delete-link:active{
+	background-color: #f44336;
+	color: black;
+}
+
+.travel-table a#detail-link:link,.travel-table a#detail-link:visited{
+	background-color: transparent;
+	color: #0D47A1;
+	padding: 0;
+}
+
+.travel-table a#detail-link:hover, .travel-table a#detail-link:active{
+	color: #90E0EF;
+}
+
+.user-detail h2{
+	margin: 0;
+	padding: 2%;
+	background-color: #daf3f5;
+	border-bottom: 1px solid #0D47A1;
+}
+
+.user-detail{
+	padding-bottom: 1%;
+	background-color: #0D47A1;
+}
+
+#user-table {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#user-table td.user-info{
+	font-weight: bold;
+	border-right: 1px solid #0D47A1;
+}
+
+#user-table tr{
+	border-bottom: 1px solid #0D47A1;
+	background-color: white;
+}
+
+#user-table td{
+	font-size: 1.2em;
+	padding: 2%;
+	margin: 0;
+}
+
+#user-table tr:hover {background-color: #ddd;}
+
+p.user-link, p.admin-link, a#checkout-link{
+	margin-bottom: 2%;
+	font-size: 1.2em;
+}
+
+h2#traveler-detail{
+	border-radius: 15px;
+	background-color: #0D47A1;
+	padding: 10px;
+	color: white;
+}
+
+@media screen and (max-width: 1200px){
+.travel-toCart{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.mod-link{
+	text-align: center;
+}
+
+.user-link, .admin-link{
+	text-align: center;
+}
+
+.mod-link h2{
+	text-align: left;
+}
+}
+
+@media screen and (max-width: 800px){
+#search-username{
+	grid-row: 2;
+	grid-column: 1;
+	text-align: left;
+}
+
+#search-date{
+	grid-row: 1;
+	grid-column: 1;
+	text-align: left;
+}
+}
+
+@media screen and (max-width: 500px){
+#search-username{
+	grid-row: 3;
+	grid-column: 1;
+	text-align: left;
+}
+
+#search-date{
+	grid-row: 1;
+	grid-column: 1;
+	text-align: left;
+}
+
+#toDate{
+	grid-row: 2;
+	grid-column: 1;
+	text-align: left;
+}
+
+#in-toDate{
+	display: block;
+}
+
+}
+
+@media screen and (max-width: 600px){
+.mod-link #addLink, .admin-link #allOrder-link{
+	margin-top: 10px;
+}	
+}
+
+@media screen and (max-width: 350px){
+.admin-link #allDest-link{
+	margin-top: 10px;
+}	
+}

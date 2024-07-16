@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+
+body#loginBody {
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+form#loginForm {
+	border: 3px solid #f1f1f1;
+	margin-left:30%;
+	margin-right:30%;
+	font-size: 1.2em;
+	}
+
+.containerLogin input[type=text], .containerLogin input[type=password], .containerLogin p {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 16px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.containerLogin p {
+	border: none;
+	}
+
+.containerLogin a{
+	color: #0D47A1;
+	text-decoration: none;
+}
+
+.containerLogin a:hover{
+	color: #90E0EF;
+}
+
+.containerLogin button {
+  background-color: #0D47A1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+}
+
+.containerLogin button:hover {
+  opacity: 0.8;
+}
+
+.containerLogin {
+  padding: 32px;
+}
+
+@media screen and (max-width: 1000px){
+	form#loginForm{
+	margin: 0;
+	}
+}
